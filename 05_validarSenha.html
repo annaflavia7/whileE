@@ -18,13 +18,18 @@
     c) A porcentagem de votos brancos;
     d) O candidato vencedor.
     */
-
     //ENTRADA
+    const senhaCorreta = 1311;
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    //PROCESSAMENTO E SAÍDA
+    let senha;
+    while (true) {
+        senha = prompt(`Insira a senha de 4 números inteiros:`);
+        if (senha.length === 4 && senha === senhaCorreta.toString()) {
+            alert(`Senha correta.`);
+            break;
+        } else {
+            alert(`Senha incorreta.`);
+        }
+    }
 </script>
